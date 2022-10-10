@@ -1,0 +1,25 @@
+Problem -2 
+Answer :
+var numComponents = function(head, G) {
+if(!head) return null;
+let GSet = new Set(G);
+let ret = 0,series = 0;
+while(head) {
+series = GSET.has(head.val)?series +1:0;
+if(series == 1)
+ret +=1;
+head = head.next;
+}
+return ret;
+};
+
+Problem 1 :-
+
+const hasCycle = (head) =>{
+let fast = head;
+while(fast && fast.next){
+head = head.next.next;
+if(head === fast) return true;
+}
+return false;
+};
